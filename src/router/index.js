@@ -95,7 +95,7 @@ export const constantRouterMap = [
     noDropdown: true,
     children: [{ path: 'index', component: Introduction, name: '简述' }]
   }
-]
+];
 
 export default new Router({
   // mode: 'history', //后端支持可开

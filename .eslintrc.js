@@ -315,4 +315,4 @@ module.exports = {
         // require or disallow spacing around the * in yield* expressions
         'yield-star-spacing': 'error'
     }
-}
+};

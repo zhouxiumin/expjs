@@ -30,8 +30,6 @@ function generateArray(table) {
                 colspan = colspan || 1;
                 ranges.push({s: {r: R, c: outRow.length}, e: {r: R + rowspan - 1, c: outRow.length + colspan - 1}});
             }
-            ;
-
             //Handle Value
             outRow.push(cellValue !== "" ? cellValue : null);
 
@@ -41,8 +39,7 @@ function generateArray(table) {
         out.push(outRow);
     }
     return [out, ranges];
-};
-
+}
 function datenum(v, date1904) {
     if (date1904) v += 1462;
     var epoch = Date.parse(v);
@@ -93,7 +90,7 @@ function s2ab(s) {
 
 export function export_table_to_excel(id) {
     var theTable = document.getElementById(id);
-    console.log('a')
+    console.log('a');
     var oo = generateArray(theTable);
     var ranges = oo[1];
 
@@ -136,6 +133,6 @@ export function export_json_to_excel(th, jsonData, defaultTitle) {
     wb.Sheets[ws_name] = ws;
 
     var wbout = XLSX.write(wb, {bookType: 'xlsx', bookSST: false, type: 'binary'});
-    var title = defaultTitle || '列表'
+    var title = defaultTitle || '列表';
     saveAs(new Blob([s2ab(wbout)], {type: "application/octet-stream"}), title + ".xlsx")
 }

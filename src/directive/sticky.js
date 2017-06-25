@@ -26,7 +26,7 @@
         placeholder.style.display = 'none';
         placeholder.style.width = `${elWidth}px`;
         placeholder.style.height = `${elHeight}px`;
-        parentElm.insertBefore(placeholder, el)
+        parentElm.insertBefore(placeholder, el);
 
         let active = false;
 

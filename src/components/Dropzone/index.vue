@@ -69,7 +69,7 @@
           },
           sending: (file, xhr, formData) => {
              /* 七牛*/
-            console.log(file, xhr, formData)
+            console.log(file, xhr, formData);
             // formData.append('token', file.token);
             // formData.append('key', file.key);
             vm.initOnce = false;

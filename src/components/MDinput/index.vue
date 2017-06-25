@@ -65,7 +65,7 @@
       },
       methods: {
         handleModelInput(event) {
-          this.$emit('input', event.target.value, event)
+          this.$emit('input', event.target.value, event);
           this.handleValidation()
         },
         handleFocus(focused) {
@@ -75,7 +75,7 @@
           this.valid = this.$el ? this.$el.querySelector('.material-input').validity.valid : this.valid
         },
         copyValue(value) {
-          this.valueCopy = value
+          this.valueCopy = value;
           this.handleValidation()
         }
       },

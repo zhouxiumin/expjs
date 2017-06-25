@@ -9,13 +9,13 @@ for (let i = 0; i < count; i++) {
     name: '@first'
   }));
 }
-NameList.push({ name: 'mockPan' })
+NameList.push({ name: 'mockPan' });
 
 export default {
   searchUser: config => {
     const { name } = param2Obj(config.url);
     const mockNameList = NameList.filter(item => {
-      const lowerCaseName = item.name.toLowerCase()
+      const lowerCaseName = item.name.toLowerCase();
       if (name && lowerCaseName.indexOf(name.toLowerCase()) < 0) return false;
       return true;
     });

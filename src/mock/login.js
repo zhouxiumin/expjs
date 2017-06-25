@@ -26,7 +26,7 @@ const userMap = {
     name: '工程师小王',
     uid: '003'
   }
-}
+};
 
 export default {
   loginByEmail: config => {

@@ -51,7 +51,7 @@ router.beforeEach((to, from, next) => {
         store.dispatch('GetInfo').then(res => { // 拉取user_info
           const roles = res.data.role;
           store.dispatch('GenerateRoutes', { roles }).then(() => { // 生成可访问的路由表
-            router.addRoutes(store.getters.addRouters) // 动态添加可访问路由表
+            router.addRoutes(store.getters.addRouters); // 动态添加可访问路由表
             next(to.path); // hack方法 确保addRoutes已完成
           })
         }).catch(err => {

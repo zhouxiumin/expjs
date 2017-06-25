@@ -16,7 +16,7 @@
         type: String,
         default: 'circle',
         validator: val => {
-          const validShapes = ['circle', 'square']
+          const validShapes = ['circle', 'square'];
           return validShapes.indexOf(val) > -1
         }
       }

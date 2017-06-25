@@ -53,7 +53,7 @@
           const xAxisData = [];
           const data = [];
           for (let i = 0; i < dataList.length; i++) {
-            const item = dataList[i]
+            const item = dataList[i];
             xAxisData.push(item.week.substring(item.week.length - 2) + '周');
             data.push(item.count)
           }

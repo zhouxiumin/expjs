@@ -20,7 +20,7 @@ service.interceptors.request.use(config => {
   // Do something with request error
   console.log(error); // for debug
   Promise.reject(error);
-})
+});
 
 // respone拦截器
 service.interceptors.response.use(
@@ -54,6 +54,6 @@ service.interceptors.response.use(
     });
     return Promise.reject(error);
   }
-)
+);
 
 export default service;

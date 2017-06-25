@@ -61,7 +61,7 @@
          _decimals() {
            if (this.setDecimals) {
              if (this.setDecimals < 0 || this.setDecimals > 20) {
-               alert('digits argument must be between 0 and 20')
+               alert('digits argument must be between 0 and 20');
                return 0
              }
              return this.setDecimals

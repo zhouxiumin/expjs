@@ -49,7 +49,7 @@
             return
           }
           this.position = '';
-          this.width = 'auto'
+          this.width = 'auto';
           this.active = false
         },
         handleScroll() {

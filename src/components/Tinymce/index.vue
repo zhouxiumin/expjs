@@ -175,7 +175,7 @@
       methods: {
         /* 业务代码可删除 start*/
         imageSuccessCBK(arr) {
-          console.log(arr)
+          console.log(arr);
           const _this = this;
           arr.forEach(v => {
             const node = document.createElement('img');

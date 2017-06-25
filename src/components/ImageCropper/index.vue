@@ -661,12 +661,12 @@
             }
             // 监听进度回调
             function uploadProgress (event) {
-                console.log(event)
+                console.log(event);
                 if (event.lengthComputable) {
                     that.progress = 100 * Math.round(event.loaded) / event.total;
                 }
-            };
-            // 上传文件
+            }
+                // 上传文件
             that.reset();
             that.loading = 1;
             that.setStep(3);
